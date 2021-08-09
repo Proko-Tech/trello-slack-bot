@@ -3,12 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.status(200);
+  res.status(200).json({status: 'success'});
 });
 
 router.head('/card', function(req, res, next){
   console.log(req);
-  res.status(200);
+  res.status(200).json({status: 'success'});
 });
 
 module.exports = router;
