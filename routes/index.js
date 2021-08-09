@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.head('/card', function(req, res, next){
-  console.log(req);
+  console.log(req.body);
   res.status(200).json({status: 'success'});
 });
 
