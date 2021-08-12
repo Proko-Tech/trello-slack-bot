@@ -4,8 +4,8 @@ const web = require('./config');
 const conversationId = process.env.CHANNEL_ID;
 
 async function write(text){
-    const res = await web.chat.postMessage({ channel: conversationId, text });
-    return res;
+    const response = await web.chat.postMessage({ channel: conversationId, text });
+    return response;
 }
 
 module.exports={write};
